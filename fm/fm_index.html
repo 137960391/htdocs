@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>个人财务管理系统</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+	<style type="text/css">
+	*{
+		margin: 0;
+
+	}
+	body
+	{
+		background-image: url("../source/fm_bj.jpg");
+	}
+	.content
+	{
+		position: absolute;
+		top:40%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.content input[name='content']
+	{
+	
+		top:40px;
+		left: 10px;
+		width: 200px;
+		height: 18px;
+		
+	}
+	.content input[name='money']
+	{
+		
+		top:80px;
+		left: 10px;
+		width: 200px;
+		height: 18px;
+		
+	}
+	.content input[name='button']
+	{
+		
+		top:130px;
+		left: 10px;
+		width: 200px;
+		height: 25px;
+	}
+	.content label
+	{
+		color: white;
+		font-size: 17px;
+		font-family: "华文楷体";
+	}
+	.statistics
+	{
+		position: absolute;
+		top:90%;
+		left: 50%;
+		font-size: 20px;
+		font-family: "华文楷体";
+		color: red;
+		transform: translate(-50%,-50%);
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="content">
+		<form>
+			<label><input type="radio" name="getlost" checked="checked">收入</input></label>
+			<label><input type="radio" name="getlost">支出</input></label></br></br>
+			<input type="text" name="money" placeholder="金额"></input></br></br>
+			<input type="text" name="content" placeholder="描述"></input></br></br>
+			<input type="button" name="button" value="添加">
+		</form>
+	</div>
+	<div class="statistics">
+		<div>当月消费：？元</div>
+		<div>当月收入：？元</div>
+		<div>当月盈亏：？元</div>
+	</div>
+</body>
+</html>
